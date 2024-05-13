@@ -66,11 +66,11 @@
   margin-bottom: 46px; }
 
 .button-alt-burger {
-  background-image: url(./static/alt_burger.svg);
+  background-image: url(./img/alt_burger.svg);
   margin-left: 24px; }
 
 .button-alt-search {
-  background-image: url(./static/alt-search.svg);
+  background-image: url(./img/alt-search.svg);
   margin-right: 16px;
   margin-left: auto; }
 
@@ -98,7 +98,7 @@
   color: #7e7e82; }
 
 .menu__link:focus::before {
-  content: url(./static/highlight.svg);
+  content: url(./img/highlight.svg);
   width: 4px;
   height: 32px;
   position: absolute;
@@ -243,7 +243,7 @@
   margin-bottom: 16px; }
 
 .content__button::before {
-  content: url(./static/expand.svg);
+  content: url(./img/expand.svg);
   width: 24px;
   height: 24px; }
 
@@ -277,7 +277,7 @@
   align-items: center; }
 
 .button-burger {
-  background-image: url(./static/burger.svg);
+  background-image: url(./img/burger.svg);
   margin-left: 16px; }
 
 .logo {
@@ -291,15 +291,15 @@
   display: none; }
 
 .button-call {
-  background-image: url(./static/call.svg);
+  background-image: url(./img/call.svg);
   margin-right: 16px; }
 
 .button-chat {
-  background-image: url(./static/chat.svg);
+  background-image: url(./img/chat.svg);
   margin-right: 16px; }
 
 .button-profile {
-  background-image: url(./static/profile.svg);
+  background-image: url(./img/profile.svg);
   margin-right: 30px; }
 
 .header__right-mob {
@@ -308,18 +308,18 @@
   align-items: center; }
 
 .button-tools {
-  background-image: url(./static/tools.svg);
+  background-image: url(./img/tools.svg);
   margin-right: 16px; }
 
 .button-tools::after {
-  content: url(./static/divider.svg);
+  content: url(./img/divider.svg);
   position: relative;
   width: 2px;
   height: 32px;
   right: 35px; }
 
 .button-search {
-  background-image: url(./static/search.svg);
+  background-image: url(./img/search.svg);
   margin-right: 16px; }
 
 .remontBrands {
@@ -367,40 +367,40 @@
   background-color: #fff; }
 
 .swiper-slide:nth-child(1) {
-  background-image: url(./static/acer.svg); }
+  background-image: url(./img/acer.svg); }
 
 .swiper-slide:nth-child(2) {
-  background-image: url(./static/apple.svg); }
+  background-image: url(./img/apple.svg); }
 
 .swiper-slide:nth-child(3) {
-  background-image: url(./static/bosh.svg); }
+  background-image: url(./img/bosh.svg); }
 
 .swiper-slide:nth-child(4) {
-  background-image: url(./static/hp.svg); }
+  background-image: url(./img/hp.svg); }
 
 .swiper-slide:nth-child(5) {
-  background-image: url(./static/lenovo.svg); }
+  background-image: url(./img/lenovo.svg); }
 
 .swiper-slide:nth-child(6) {
-  background-image: url(./static/samsung.svg); }
+  background-image: url(./img/samsung.svg); }
 
 .swiper-slide:nth-child(7) {
-  background-image: url(./static/sony.svg); }
+  background-image: url(./img/sony.svg); }
 
 .swiper-slide:nth-child(8) {
-  background-image: url(./static/view.svg); }
+  background-image: url(./img/view.svg); }
 
 .swiper-slide:nth-child(9) {
-  background-image: url(./static/acer.svg); }
+  background-image: url(./img/acer.svg); }
 
 .swiper-slide:nth-child(10) {
-  background-image: url(./static/acer.svg); }
+  background-image: url(./img/acer.svg); }
 
 .swiper-slide:nth-child(11) {
-  background-image: url(./static/acer.svg); }
+  background-image: url(./img/acer.svg); }
 
 .button-link {
-  background: url(./static/brand-link.svg) no-repeat center;
+  background: url(./img/brand-link.svg) no-repeat center;
   width: 40px;
   height: 40px;
   margin-right: 16px;
@@ -416,7 +416,7 @@
   width: 124px;
   height: 24px;
   margin-left: 30px;
-  background-image: url(./static/expand.svg);
+  background-image: url(./img/expand.svg);
   background-repeat: no-repeat; }
 
 @media screen and (max-width: 768px) {
@@ -442,7 +442,7 @@
 
 @media (min-width: 600px) {
   .button-burger::after {
-    content: url(./static/divider.svg);
+    content: url(./img/divider.svg);
     height: 32px;
     width: 2px;
     margin-left: 50px; }
