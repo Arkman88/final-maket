@@ -10,7 +10,7 @@
     <header class="header">
       <ul class="header__left no-select ul-clear">
         <li class="header__left-burger">
-          <button type="button" onclick="window.menu.showModal()" class="button button-burger hover"></button>
+          <button type="button" class="button button-burger hover"></button>
         </li>
         <li class="logo header__logo"><a class="hover" href="#"><img src="img/logo.svg" alt="Логотип компании"></a>
         </li>
@@ -72,7 +72,7 @@
                 партнера<span class="content__text-more">, что подтверждает большое количество постоянных клиентов. Мы
                   гордимся тем, что к нам обращаются по рекомендациям и, в свою
                   очередь, советуют нас родным и близким.<br></span>
-                <span class="content__text-more-btn">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                <span class="content__text-more-more">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Placeat illum, sunt quidem non cumque cupiditate atque, eum
                   nisi beatae possimus dolorum cum alias sequi? Eum sit debitis
                   consectetur sequi odit? Provident deserunt animi, impedit
@@ -90,8 +90,8 @@
                   sunt iure at in libero, id in!</span>
               </p>
             </div>
-            <button class="content__button no-select hover">
-              <span class="content__read-more">Читать далее</span>
+            <button onclick="readMore()" class="content__button no-select hover">Читать далее
+              <span class="content__read-more"></span>
             </button>
           </div>
           <img class="content__topic-img" src="img/topic-image.png" alt="изображение логотипа компании CPS">
@@ -116,7 +116,7 @@
             </ul>
             <div class="swiper-pagination"></div>
           </div>
-          <button onclick="readMore()" class="button-show-more hover">Показать всё</button>
+          <button onclick="readMoreB()" class="button-show-more hover">Показать всё</button>
         </div>
       </div>
       <div class="remontTechno">
@@ -124,64 +124,80 @@
         <div class="content-swiper">
           <div class="swiper swiper-techno">
             <ul class="swiper-wrapper ul-clear">
-              <li class="swiper-slide"><button class="button-link hover"></button></li>
-              <li class="swiper-slide"><button class="button-link hover"></button></li>
-              <li class="swiper-slide"><button class="button-link hover"></button></li>
-              <li class="swiper-slide"><button class="button-link hover"></button></li>
-              <li class="swiper-slide"><button class="button-link hover"></button></li>
-              <li class="swiper-slide"><button class="button-link hover"></button></li>
-              <li class="swiper-slide"><button class="button-link hover"></button></li>
-              <li class="swiper-slide"><button class="button-link hover"></button></li>
-              <li class="swiper-slide"><button class="button-link hover"></button></li>
-              <li class="swiper-slide"><button class="button-link hover"></button></li>
-              <li class="swiper-slide"><button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт ноутбуков<button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт планшетов<button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт ПК<button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт мониторов<button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт смартфонов<button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт граммофонов<button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт принтеров<button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт оборудования<button class="button-link hover"></button></li>
             </ul>
             <div class="swiper-pagination"></div>
           </div>
-          <button onclick="readMore()" class="button-show-more hover">Показать всё</button>
+          <button onclick="readMoreT()" class="button-show-more hover">Показать всё</button>
+        </div>
+      </div>
+      <div class="prices">
+        <header class="header-swiper"><h1 class="header-swiper__name">Цены на услуги</h1></header>
+        <div class="content-swiper">
+          <div class="swiper swiper-prices">
+            <ul class="swiper-wrapper ul-clear">
+              <li class="swiper-slide">Ремонт ноутбуков<button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт планшетов<button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт ПК<button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт мониторов<button class="button-link hover"></button></li>
+              <li class="swiper-slide">Ремонт смартфонов<button class="button-link hover"></button></li>
+            </ul>
+            <div class="swiper-pagination"></div>
+          </div>
+          <article>
+            <p>Все цены указаны с учетом НДС. Стоимость ремонта указана на
+              единичную услугу. Для получения коммерческого предложения на
+              постоянное обслуживание, оставьте заявку.</p>
+            <a href="#">Получить коммерческое предложение</a>
+          </article>
         </div>
       </div>
     </main>
     <div class="menu">
-      <dialog id="menu">
-        <header class="menu__header">
-          <button type="button" onclick="window.menu.close()" class="button button-alt-burger"></button>
-          <a class="logo menu__logo" href="#">
-            <img src="img/logo.svg" alt="Логотип компании">
-          </a>
-          <button class="button button-alt-search hover"></button>
-        </header>
-        <main class="menu__main">
-          <nav class="menu__nav">
-            <ul class="menu__list no-select ul-clear">
-              <li class="menu__item"><a class="menu__link hover" href="#">Ремонт техники</a></li>
-              <li class="menu__item"><a class="menu__link hover" href="#">Услуги и сервисы</a></li>
-              <li class="menu__item"><a class="menu__link hover" href="#">Корпоратвным клиентам</a></li>
-              <li class="menu__item"><a class="menu__link hover" href="#">Продавцам техники</a></li>
-              <li class="menu__item"><a class="menu__link hover" href="#">Партнерам</a></li>
-              <li class="menu__item"><a class="menu__link hover" href="#">Производителям</a></li>
-              <li class="menu__item"><a class="menu__link hover" href="#">Наши сервисные центры</a></li>
-              <li class="menu__item"><a class="menu__link hover" href="#">Контакты</a></li>
-            </ul>
-          </nav>
-        </main>
-        <footer class="footer">
-          <ul class="footer__menu ul-clear">
-            <li class="footer__call"><button class="button button-call hover"></button></li>
-            <li class="footer__chat"><button class="button button-chat hover"></button></li>
-            <li class="footer__profile"><button class="button button-profile hover"></button></li>
+      <header class="menu__header">
+        <button type="button" class="button button-alt-burger"></button>
+        <a class="logo menu__logo" href="#">
+          <img src="img/logo.svg" alt="Логотип компании">
+        </a>
+        <button type="button" class="button button-alt-search hover"></button>
+      </header>
+      <main class="menu__main">
+        <nav class="menu__nav">
+          <ul class="menu__list no-select ul-clear">
+            <li class="menu__item"><a class="menu__link hover" href="#">Ремонт техники</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Услуги и сервисы</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Корпоратвным клиентам</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Продавцам техники</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Партнерам</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Производителям</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Наши сервисные центры</a></li>
+            <li class="menu__item"><a class="menu__link hover" href="#">Контакты</a></li>
           </ul>
-          <address class="footer__address">
-            <a class="footer__mail hover" href="mailto: mail@cps.com">mail@cps.com</a><br>
-            <a class="footer__phone hover" href="tel: 88008908900">8 800 890 8900</a>
-          </address>
-          <ul class="language ul-clear">
-            <li><a class="language__link hover" href="#">RU</a></li>
-            <li><a class="language__link hover" href="#">EN</a></li>
-            <li><a class="language__link hover" href="#">CH</a></li>
-          </ul>
-        </footer>
-      </dialog>
+        </nav>
+      </main>
+      <footer class="footer">
+        <ul class="footer__menu ul-clear">
+          <li class="footer__call"><button class="button button-call hover"></button></li>
+          <li class="footer__chat"><button class="button button-chat hover"></button></li>
+          <li class="footer__profile"><button class="button button-profile hover"></button></li>
+        </ul>
+        <address class="footer__address">
+          <a class="footer__mail hover" href="mailto: mail@cps.com">mail@cps.com</a><br>
+          <a class="footer__phone hover" href="tel: 88008908900">8 800 890 8900</a>
+        </address>
+        <ul class="language ul-clear">
+          <li><a class="language__link hover" href="#">RU</a></li>
+          <li><a class="language__link hover" href="#">EN</a></li>
+          <li><a class="language__link hover" href="#">CH</a></li>
+        </ul>
+      </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
