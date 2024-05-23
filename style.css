@@ -546,7 +546,7 @@
   margin-right: 0;
   margin-top: 0;
   height: 100%;
-  overflow: visible; }
+  overflow-x: visible; }
 
 .modal {
   display: flex;
@@ -753,8 +753,7 @@
   #modalFeedback,
   #modalCall {
     width: 520px;
-    background-color: rgba(0, 0, 0, 0);
-    overflow: visible; }
+    background-color: rgba(0, 0, 0, 0); }
   .modal {
     position: relative;
     right: -30px;
