@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
     <title>Services</title>
   <link href="style.css" rel="stylesheet"></head>
   <body class="body">
@@ -90,7 +89,7 @@
                   sunt iure at in libero, id in!</span>
               </p>
             </div>
-            <button onclick="readMore()" class="content__button no-select hover">Читать далее
+            <button onclick="readMore()" class="button-show-more hover">Читать далее
               <span class="content__read-more"></span>
             </button>
           </div>
@@ -139,59 +138,54 @@
         </div>
       </div>
       <div class="prices">
-        <header class="header-swiper"><h1 class="header-swiper__name">Цены на услуги</h1></header>
-        <div class="content-swiper">
-          <div class="swiper swiper-prices">
-            <table class="swiper-wrapper ul-clear">
-              <thead>
-                <tr>
-                  <th>Ремонтные услуги</th>
-                  <th>Цена</th>
-                  <th>Срок</th>
-                  <th></th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="swiper-slide">
-                  <td>Диагностика</td>
-                  <td>Бесплатно</td>
-                  <td>30 мин</td>
-                  <td><button class="prices__button">Заказать</button></td>
-                </tr>
-                <tr class="swiper-slide">
-                  <td>Замена дисплея</td>
-                  <td>1000р</td>
-                  <td>30-120 мин</td>
-                  <td><button class="prices__button">Заказать</button></td>
-                </tr>
-                <tr class="swiper-slide">
-                  <td>Замена полифонического динамика</td>
-                  <td>1000р</td>
-                  <td>30-120 мин</td>
-                  <td><button class="prices__button">Заказать</button></td>
-                </tr>
-                <tr class="swiper-slide">
-                  <td>Тестирование с выдачей технического заключения</td>
-                  <td>1000р</td>
-                  <td>30-120 мин</td>
-                  <td><button class="prices__button">Заказать</button></td>
-                </tr>
-                <tr class="swiper-slide">
-                  <td>Замена программного обеспечения</td>
-                  <td>1000р</td>
-                  <td>30-120мин</td>
-                  <td><button class="prices__button">Заказать</button></td>
-                </tr>
-              </tbody>
-              <caption class="prices__footer">
-                Все цены указаны с учетом НДС. Стоимость ремонта указана на
-                единичную услугу. Для получения коммерческого предложения на
-                постоянное обслуживание, оставьте заявку.<br>
-                <a href="#">Получить коммерческое предложение</a>
-              </caption>
-            </table>
-
-            <div class="swiper-pagination"></div>
+        <header class="prices__header"><h1 class="prices__header-name">Цены на услуги</h1></header>
+        <div class="prices__swiper">
+          <table class="swiper swiper-prices">
+            <tbody class="swiper-wrapper">
+              <tr class="swiper-slide">
+                <td>Диагностика</td>
+                <td>Бесплатно</td>
+                <td>30 мин</td>
+                <td><button class="prices__button">Заказать</button></td>
+              </tr>
+              <tr class="swiper-slide">
+                <td>Замена дисплея</td>
+                <td>1000р</td>
+                <td>30-120 мин</td>
+                <td><button class="prices__button">Заказать</button></td>
+              </tr>
+              <tr class="swiper-slide">
+                <td>Замена полифонического динамика</td>
+                <td>1000р</td>
+                <td>30-120 мин</td>
+                <td><button class="prices__button">Заказать</button></td>
+              </tr>
+              <tr class="swiper-slide">
+                <td>Тестирование с выдачей технического заключения</td>
+                <td>1000р</td>
+                <td>30-120 мин</td>
+                <td><button class="prices__button">Заказать</button></td>
+              </tr>
+              <tr class="swiper-slide">
+                <td>Замена программного обеспечения</td>
+                <td>1000р</td>
+                <td>30-120мин</td>
+                <td><button class="prices__button">Заказать</button></td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td>
+                  <div class="swiper-pagination services-cost__pagination"></div>
+                </td>
+              </tr>
+            </tfoot>
+          </table>
+          <div class="prices__footer">
+            Все цены указаны с учетом НДС. Стоимость ремонта указана на
+            единичную услугу. Для получения коммерческого предложения на
+            постоянное обслуживание, оставьте заявку.<br>
+            <a href="#">Получить коммерческое предложение</a>
           </div>
         </div>
       </div>
@@ -277,6 +271,5 @@
         </form>
       </div>
     </dialog>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script type="text/javascript" src="./js/bundle.js"></script></body>
 </html>
