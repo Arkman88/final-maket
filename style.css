@@ -777,7 +777,7 @@
   margin-right: 0;
   margin-top: 0;
   height: 100%;
-  overflow: hidden; }
+  overflow: visible; }
 
 .modal {
   display: flex;
