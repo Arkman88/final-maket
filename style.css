@@ -684,18 +684,13 @@
 
 .prices {
   margin-top: 32px; }
-  .prices .prices__swiper {
-    margin-left: 16px;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    align-items: flex-start;
-    margin-bottom: 30px; }
   .prices .prices__header {
     margin-left: 26px;
     align-content: center;
     height: 80px;
     background: linear-gradient(90deg, #f8f8f8, #fff); }
+  .prices .prices__table-header {
+    display: none; }
   .prices .prices__header-name {
     text-transform: uppercase;
     font-size: 16px;
@@ -830,7 +825,7 @@
     margin-right: 16px;
     margin-bottom: 10px; } }
 
-@media screen and (min-width: 769px) {
+@media (min-width: 769px) {
   .swiper-brands .swiper-wrapper,
   .swiper-techno .swiper-wrapper {
     display: flex;
@@ -840,10 +835,18 @@
     height: 173px;
     margin-bottom: 10px;
     overflow: hidden; }
+  .swiper-prices .prices__table-header {
+    display: table;
+    width: 100%; }
   .swiper-prices .swiper-wrapper {
     display: table;
-    height: 173px;
+    height: auto;
     margin-bottom: 10px; }
+  .swiper-prices .swiper-slide {
+    display: table;
+    width: 100%;
+    height: 64px;
+    text-align: start; }
   .footer {
     display: flex;
     flex-direction: row;
