@@ -486,6 +486,25 @@
 .content__right-mob {
   display: none; }
 
+.button-show-more {
+  display: flex;
+  align-items: center;
+  padding-left: 25px;
+  font-size: 16px;
+  border: none;
+  background: none;
+  width: 144px;
+  height: 24px;
+  margin-left: 5px;
+  background-image: url(./img/expand.svg);
+  background-repeat: no-repeat; }
+
+.content__text-all {
+  display: none; }
+
+.content--show {
+  display: inline; }
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -690,7 +709,8 @@
     height: 80px;
     background: linear-gradient(90deg, #f8f8f8, #fff); }
   .prices .prices__table-header {
-    display: none; }
+    display: none;
+    color: #7e7e82; }
   .prices .prices__header-name {
     text-transform: uppercase;
     font-size: 16px;
@@ -716,6 +736,23 @@
     height: 200px;
     background-color: #fff;
     padding: 16px; }
+
+.prices__footer {
+  font-size: 14px;
+  padding: 25px; }
+
+.prices__commercial-link {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #1b1c21; }
+
+.prices__commercial-link::after {
+  content: url(./img/Line.svg);
+  width: 6px;
+  height: 10px;
+  position: relative;
+  left: 7px; }
 
 .footer__author,
 .footer__policy,
@@ -799,23 +836,23 @@
     width: 100%; } }
 
 @media screen and (max-width: 768px) {
-  .swiper-brands .swiper-wrapper {
+  .remontBrands .swiper-wrapper {
     display: flex;
     max-width: 768px;
     height: 100px;
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 10px; }
-  .swiper-brands .button-show-more {
+  .remontBrands .button-show-more {
     display: none; }
-  .swiper-techno .swiper-wrapper {
+  .remontTechno .swiper-wrapper {
     display: flex;
     max-width: 768px;
     height: 190px;
     margin-left: 16px;
     margin-right: 16px;
     margin-bottom: 10px; }
-  .swiper-techno .button-show-more {
+  .remontTechno .button-show-more {
     display: none; }
   .swiper-prices .swiper-wrapper {
     display: flex;
@@ -844,7 +881,7 @@
     margin-bottom: 10px; }
   .swiper-prices .swiper-slide {
     display: table;
-    width: 100%;
+    width: 95%;
     height: 64px;
     text-align: start; }
   .footer {
@@ -855,7 +892,18 @@
   .footer__author {
     text-align: start; }
   .footer__offerta {
-    text-align: end; } }
+    text-align: end; }
+  .prices__first-column {
+    width: 40%; }
+  .prices__second-column {
+    width: 20%; }
+  .prices__third-column {
+    width: 20%; }
+  .prices__table-header {
+    display: table-header-group;
+    text-align: left;
+    padding-left: 20px;
+    margin-bottom: 16px; } }
 
 @media (min-width: 600px) {
   .button-burger::after {
@@ -873,14 +921,14 @@
     flex-direction: row;
     align-items: flex-start; }
   .content__full-text {
-    display: block; }
-  .content__text-more-more {
-    display: none; }
+    display: inline; }
   .content__topic-img {
     margin-top: 15px;
     width: 360px;
     height: 208px;
-    border-radius: 15px; } }
+    border-radius: 15px; }
+  .prices__footer {
+    width: 420px; } }
 
 @media (min-width: 1050px) {
   .body {
