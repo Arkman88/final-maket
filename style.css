@@ -777,7 +777,7 @@
   margin-right: 0;
   margin-top: 0;
   height: 100%;
-  overflow-x: visible; }
+  overflow: hidden; }
 
 .modal {
   display: flex;
@@ -903,7 +903,8 @@
     display: table-header-group;
     text-align: left;
     padding-left: 20px;
-    margin-bottom: 16px; } }
+    margin-bottom: 10px;
+    margin-top: 20px; } }
 
 @media (min-width: 600px) {
   .button-burger::after {
